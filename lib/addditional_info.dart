@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 class AdditionalInfoItem extends StatelessWidget {
   final IconData icon;
@@ -77,7 +78,7 @@ class WeatherInfoGrid extends StatelessWidget {
       mainAxisSpacing: 16,
       crossAxisSpacing: 16,
       padding: const EdgeInsets.all(16),
-      children: [
+      children:const [
         AdditionalInfoItem(
           icon: Icons.water_drop,
           label: "Humidity",

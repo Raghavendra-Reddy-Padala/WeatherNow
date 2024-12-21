@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:http/http.dart' as http;
 import 'package:geolocator/geolocator.dart';
-import 'package:weatherapp/addditional_info.dart';
 import 'package:weatherapp/hourlyforcast.dart';
+import 'package:weatherapp/sec.dart';
 
 class WeatherScreen extends StatefulWidget {
   const WeatherScreen({super.key});
@@ -33,7 +33,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
     try {
       final res = await http.get(
         Uri.parse(
-          'http://api.openweathermap.org/data/2.5/forecast?q=$selectedCity,IN&APPID=537c6f63b8812c8cf0a12e322e0188cf',
+          'http://api.openweathermap.org/data/2.5/forecast?q=$selectedCity,IN&APPID=$openWeatherAPIKey',
         ),
       );
       final data = jsonDecode(res.body);
@@ -51,7 +51,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
       final position = await Geolocator.getCurrentPosition();
       final response = await http.get(
         Uri.parse(
-          'http://api.openweathermap.org/geo/1.0/reverse?lat=${position.latitude}&lon=${position.longitude}&limit=1&appid=537c6f63b8812c8cf0a12e322e0188cf',
+          'http://api.openweathermap.org/geo/1.0/reverse?lat=${position.latitude}&lon=${position.longitude}&limit=1&appid=$openWeatherAPIKey',
         ),
       );
       final List<dynamic> data = jsonDecode(response.body);

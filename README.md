@@ -2,15 +2,16 @@
 
 A new Flutter project.
 
-## Getting Started
+In this project I have used the weather API to get the weather data of the city and display it on the screen.
 
-This project is a starting point for a Flutter application.
+Things i have used in this project
 
-A few resources to get you started if this is your first Flutter project:
+-->pure flutter framework ui
+-->API used is https://openweathermap.org/api
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Whats so special
+-->used a geoloactor to get the location of the user and then used that location to get the weather data
+--> given a search bar to search for the weather of any city
+--> used a dropdown menu to select Popular cities 
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
