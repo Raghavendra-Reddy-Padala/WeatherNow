@@ -62,7 +62,7 @@ Follow these steps to get WeatherNow running on your device:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Raghavendra-Reddy-Padala/weatherapp.git
+   git clone https://github.com/Raghavendra-Reddy-Padala/WeatherNow.git
    ```
 
 2. Navigate to the project directory:
@@ -128,10 +128,6 @@ We're constantly working to improve WeatherNow. Coming soon:
 - Weather widgets for home screen
 - Dark mode support
 - Multiple language support
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
